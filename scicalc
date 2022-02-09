@@ -48,6 +48,11 @@ def log10(x):
 	
 	return math.log10(x)
 
+def sqrt(x):
+	"""Return the square root of x"""
+
+	return math.sqrt(x)
+
 #
 # The dictionary that maps the command-line name of the operation,
 # to the function that performs it. There can be multiple names
@@ -58,6 +63,7 @@ operators = {
 	'sum': add,
 	'mul': mul,
 	'log10': log10,
+	'sqrt' : sqrt,
 }
 
 if __name__ == "__main__":
