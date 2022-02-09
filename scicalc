@@ -35,7 +35,7 @@ def add(*args):
 		sum += arg
 	return sum
 
-def add(*args):
+def sub(*args):
         """Add a list of numbers"""
 
         sum = 0.0
