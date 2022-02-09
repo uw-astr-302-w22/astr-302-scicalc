@@ -40,6 +40,10 @@ def log10(x):
 	
 	return math.log10(x)
 
+def e(x):
+    """Return e to the power of x"""
+    return math.exp(x)
+
 #
 # The dictionary that maps the command-line name of the operation,
 # to the function that performs it. There can be multiple names
@@ -49,6 +53,7 @@ operators = {
 	'add': add,
 	'sum': add,
 	'log10': log10,
+    'e^x':e,
 }
 
 if __name__ == "__main__":
