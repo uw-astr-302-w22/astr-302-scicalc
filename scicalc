@@ -29,23 +29,20 @@ def die_with_usage(message):
 
 def add(*args):
 	"""Add a list of numbers"""
-
 	sum = 0.0
 	for arg in args:
 		sum += arg
 	return sum
 
 def sub(*args):
-        """Add a list of numbers"""
-
-        sum = 0.0
+        """Subtract a list of numbers"""
+        minus = 1.
         for arg in args:
-                sum -= arg
-        return sum
+                arg -= minus
+        return arg
 
 def mul(*args):
 	"""Multiply a list of numbers"""
-
 	prod = 1.
 	for arg in args:
 		prod *= arg
@@ -64,6 +61,7 @@ def log10(x):
 operators = {
 	'add': add,
 	'sum': add,
+	'sub': sub,
 	'mul': mul,
 	'log10': log10,
 }
