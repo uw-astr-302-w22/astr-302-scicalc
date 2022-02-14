@@ -47,6 +47,17 @@ def log10(x):
 	"""Return a base-10 logarithm of x"""
 	
 	return math.log10(x)
+    
+def integ(*args):
+    args_list = [item for item in args]
+    N = len(args_list)
+    coeff = []
+    for k in range(N):
+        c_val = args_list[k]*(1/(k+1))
+        c_val = float(c_val)
+        c_val = '{:.3f}'.format(c_val)
+        coeff.append(c_val)
+    return(coeff)
 
 #
 # The dictionary that maps the command-line name of the operation,
@@ -58,6 +69,7 @@ operators = {
 	'sum': add,
 	'mul': mul,
 	'log10': log10,
+    'integ': integ,
 }
 
 if __name__ == "__main__":
