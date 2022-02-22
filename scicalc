@@ -34,12 +34,10 @@ def add(*args):
 		sum += arg
 	return sum
 
-def sub(*args):
+def sub(x1, x2):
         """Subtract a list of numbers"""
-        minus = 1.
-        for arg in args:
-                arg -= minus
-        return arg
+        result = x1 - x2
+        return result
 
 def mul(*args):
 	"""Multiply a list of numbers"""
