@@ -40,10 +40,11 @@ def log10(x):
 	
 	return math.log10(x)
 
-def divide(x,y)
+def divide(x,y):
 	"""Divide two numbers"""
 	
 	return x/y
+
 #
 # The dictionary that maps the command-line name of the operation,
 # to the function that performs it. There can be multiple names
