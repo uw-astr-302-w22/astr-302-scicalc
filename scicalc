@@ -48,6 +48,9 @@ def log10(x):
 	
 	return math.log10(x)
 
+def sin(x):
+    """Returns sin(x) of x in radians"""
+    return math.sin(x)
 #
 # The dictionary that maps the command-line name of the operation,
 # to the function that performs it. There can be multiple names
@@ -58,6 +61,7 @@ operators = {
 	'sum': add,
 	'mul': mul,
 	'log10': log10,
+	'sin': sin,
 }
 
 if __name__ == "__main__":
